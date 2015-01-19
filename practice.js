@@ -329,7 +329,8 @@ of Data is to have an Array full of objects. */
 
 //Create an empty array called users.
 
-  //Code Here
+var users = [];
+
 
 /*Now add three user objects to your users array. Each user object should contain the
 following properties. name, email, password, username.*/
@@ -342,7 +343,20 @@ var user1 = {
     username: 'infiniateLoop'
 }
 
-//Your Code Here
+var user2 = {
+    name: 'Arnold',
+    email: 'thegovna@gmail.com',
+    password: 'pumpingiron',
+    username: 'pushups'
+}
+
+var user3 = {
+    name: 'Chris Martin',
+    email: 'coldplay@me.com',
+    password: 'yellow',
+    username: 'skyfullofstars'
+}
+
 
 /*Now you have a very common data structure. Twitter is a good use case.
 It's easy to imagine that your followers list on Twitter is an Array full or objects
@@ -352,7 +366,12 @@ and those objects contain properties about the specific person you follow.*/
 objects until you find Tyler's account (use tylermcginnis33@gmail.com to find him).
 Once you find the particular indice he's located in, delete him from the array.*/
 
-  //Code Here
+for (var i = 0; i < users.length; i++;) {
+  if (users.email === 'tylermcginnis33@gmail.com') {
+    delete.users();
+  }
+};
+users();
 
 //The activity we just did is very much how data works in 'the real world'.
 
