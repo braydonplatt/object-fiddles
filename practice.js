@@ -355,7 +355,9 @@ var user3 = {
     email: 'coldplay@me.com',
     password: 'yellow',
     username: 'skyfullofstars'
-}
+};
+users.push(user1);
+console.log(users);
 
 
 /*Now you have a very common data structure. Twitter is a good use case.
@@ -367,11 +369,11 @@ objects until you find Tyler's account (use tylermcginnis33@gmail.com to find hi
 Once you find the particular indice he's located in, delete him from the array.*/
 
 for (var i = 0; i < users.length; i++;) {
-  if (users.email === 'tylermcginnis33@gmail.com') {
-    delete.users();
+  if (users[i].email === 'tylermcginnis33@gmail.com') {
+    users.splice(i, 1);
   }
 };
-users();
+console.log(users);
 
 //The activity we just did is very much how data works in 'the real world'.
 
